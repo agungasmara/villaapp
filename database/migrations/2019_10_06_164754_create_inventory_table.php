@@ -25,8 +25,10 @@ class CreateInventoryTable extends Migration
             $table->unsignedBigInteger('id_supplier');
             $table->unsignedBigInteger('id_subproperty');
             $table->unsignedBigInteger('id_kondisi_barang');
+            $table->unsignedBigInteger('id_user');
             $table->timestamps();
             
+            $table->foreign('id_user')->references('id')->on('users');
             $table->foreign('id_supplier')->references('id')->on('supplier');
             $table->foreign('id_subproperty')->references('id')->on('sub_property');
             $table->foreign('id_kondisi_barang')->references('id')->on('kondisi_barang');

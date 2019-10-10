@@ -25,6 +25,7 @@ class PermissionRoleTableSeeder extends Seeder
         Role::create(['name' => config('access.users.operational_staff_role')]);
         Role::create(['name' => config('access.users.akunting_manager_role')]);
         Role::create(['name' => config('access.users.akunting_staff_role')]);
+        Role::create(['name' => config('access.users.butler_role')]);
         Role::create(['name' => config('access.users.default_role')]);
 
         // Create Permissions

@@ -32,7 +32,6 @@ class CreateSubPropertySoptindakanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('property_soptindakan');
         Schema::dropIfExists('subproperty_soptindakan');
     }
 }

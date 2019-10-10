@@ -38,6 +38,9 @@ return [
          // The name of the Keuangan role
         'akunting_staff_role' => 'akunting_staff_manager',
 
+         // The name of the Staff role
+        'butler_role' => 'butler',
+
         // The default role all new registered users get added to
         'default_role' => 'user',
 
